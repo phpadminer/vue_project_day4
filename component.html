@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <my-handsome></my-handsome>
+    </div>
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+
+    Vue.component('my-handsome',{
+        template:"<div>{{msg}}</div>",
+        // data必须是函数形式 必须返回一个对象类型
+        data(){
+            return {msg :'我很帅'}
+        }
+    })
+    var vm = new Vue({
+        el:'#app'
+    })
+</script>
+
+</html>

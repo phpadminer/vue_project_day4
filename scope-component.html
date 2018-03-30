@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+</head>
+<body>
+<div id="app">
+    <handsome></handsome>
+</div>
+</body>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+    var handsome = {template:'<div>我很帅啊</div>'}
+    var vm = new Vue({
+        el: '#app',
+        components:{
+            handsome
+        },
+        data: {
+            msg: 'hello world'
+        }
+    })
+</script>
+</html>
